@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EndQuiz">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/insertButton"
+                android:layout_width="110dp"
+                android:layout_height="55dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="628dp"
+                android:background="#4CAF50"
+                android:text="insert"
+                android:layout_marginLeft="200dp"
+                android:textSize="25sp"
+                android:visibility="visible"
+                tools:visibility="visible" />
+
+            <Button
+                android:id="@+id/btnShow"
+                android:layout_width="110dp"
+                android:layout_height="55dp"
+                android:background="#4CAF50"
+                android:text="result"
+                android:textSize="25sp"
+                android:visibility="visible"
+                tools:visibility="visible"
+                android:layout_marginTop="50dp"
+                android:layout_below="@+id/btnInsert"
+                />
+
+            <com.jjoe64.graphview.GraphView
+                android:id="@+id/graphid"
+                android:layout_width="525dp"
+                android:layout_height="530dp"
+                android:layout_below="@+id/btnShow"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="150dp"
+                android:hardwareAccelerated="true" />
+
+            <TextView
+                android:id="@+id/textviewScore"
+                android:layout_width="134dp"
+                android:layout_height="42dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="689dp"
+                android:text="Your Score: 0"
+                android:textSize="20sp" />
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bottom_navigation"
+                app:itemBackground="@color/colorPrimary"
+                app:itemTextColor="@drawable/selector"
+                app:itemIconTint="@android:color/black"
+                app:menu="@menu/menu_navigation"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>

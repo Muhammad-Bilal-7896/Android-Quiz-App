@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <EditText
+        android:id="@+id/etEmaillogin"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="422dp"
+        android:ems="10"
+        android:hint="example@example.com"
+        android:inputType="textEmailAddress"
+        android:textSize="20sp" />
+
+
+    <EditText
+        android:id="@+id/etPasswordlogin"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="320dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:singleLine="false"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnLoginLogin"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="257dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@android:color/white"
+        android:layout_marginRight="257dp"
+        android:layout_marginBottom="119dp"
+        android:text="Login" />
+
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="212dp"
+        android:layout_height="32dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="33dp"
+        android:layout_marginRight="33dp"
+        android:layout_marginBottom="232dp"
+        android:text="Dont have account signup"
+        android:textColor="#3F51B5"
+        android:textSize="17sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="92dp"
+        android:layout_height="46dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="251dp"
+        android:layout_marginRight="251dp"
+        android:layout_marginBottom="607dp"
+        android:text="Login"
+        android:textColor="#0B2EF1"
+        android:textSize="30sp"
+        android:textStyle="bold|italic" />
+</RelativeLayout>

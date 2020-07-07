@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".About">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This is a Intermediate\nlevel quiz app which
+is \ndesigned for the 11th class and contains the\nbest MCQS and it contains almost 120\nMCQS and its only a \ndemo version and soon INSHALLAH the \nthe complete version will be released in a\nmonth.Hope you will\nenjoy it.Thank you for downloading demo."
+        android:textSize="40sp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigation"
+        app:itemBackground="@color/colorPrimaryDark"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@android:color/white"
+        app:menu="@menu/menu_navigation"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>
